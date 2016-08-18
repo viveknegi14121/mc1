@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.vivek.mc1.MainActivity"
+    android:background="#50de63">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layouttop"
+        android:layout_centerHorizontal="true"
+        >
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/t1"
+        android:layout_gravity="left|top"
+        android:layout_marginRight="5dp"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="IS A PRIME NUMBER ?"
+        android:layout_toEndOf="@+id/t1"
+        android:id="@+id/textView2"
+        android:layout_gravity="top|center_vertical|right"
+        android:textSize="20dp"
+        android:textColor="#941a1a" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct"
+            android:layout_marginRight="25dp"
+            android:id="@+id/correct"
+            android:onClick="oncc" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INCORRECT"
+            android:layout_marginRight="25dp"
+            android:id="@+id/incorrect"
+            android:onClick="onci" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:id="@+id/next"
+            android:background="@drawable/button"
+            android:onClick="oncn" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="30dp"
+        android:id="@+id/layout2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/layout3"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Number of Correct Counts:   "
+                android:textSize="20dp"
+                android:layout_below="@+id/layout"
+                android:id="@+id/NC"
+                android:layout_gravity="left|bottom"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="0"
+                android:textSize="20dp"
+                android:id="@+id/nct"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/layout4"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Number of Incorrect Counts: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:layout_below="@+id/layout"
+            android:id="@+id/NI"
+
+            android:layout_gravity="left|bottom"/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="0"
+
+                android:textSize="20dp"
+            android:id="@+id/nit"/>
+            </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
